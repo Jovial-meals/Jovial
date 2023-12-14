@@ -1,0 +1,211 @@
+body {
+  background-image: url("images/background/backgroundOut.png"); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  display: flex; /* Use Flexbox in the body */
+  flex-direction: column; /* Align children elements vertically */
+  align-items: center; /* Center children elements horizontally */
+  justify-content: flex-start; /* Align children to the start of the page */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.left-logo {
+  padding-top: 1em; /* Space at the top */
+}
+
+.left-logo img {
+  max-width: 800px; /* Set a max width for the logo */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .left-logo img {
+    max-width: 50px; /* Smaller max-width for smaller screens */
+  }
+}
+
+/* Centering content with Flexbox */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em; /* Changed from px to em */
+}
+
+.centered-content img {
+  max-width: 100%; /* Makes the image scale according to its container */
+  height: auto;
+  margin-bottom: 1em; /* Changed from px to em */
+}
+
+button {
+  padding: 1em 2em; /* Example padding in em, adjust as needed */
+  font-size: 1.5em; /* Responsive font size */
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  border: 2px solid;
+  margin-top: 150px;
+}
+
+/* Example Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .centered-content img {
+    max-width: 80%; /* Smaller max-width for smaller screens */
+  }
+
+  button {
+    padding: 0.8em 1.6em; /* Smaller padding for smaller screens */
+    font-size: 0.9em; /* Smaller font size for smaller screens */
+  }
+}
+
+.category-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure it takes full width */
+  margin-top: 90px; /* Space below the logo, adjust as needed */
+}
+
+.category-button {
+  display: block;
+  margin: 10px 0; /* Space between buttons */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 50px; /* Adjust font size as needed */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  width: fit-content; /* Makes the button width as per content */
+}
+
+.category-button:hover {
+  background-color: lightgray; /* Change color on hover */
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .category-button {
+    /* Adjust button styles for smaller screens */
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+.header {
+  display: flex; /* Align the back button and logo */
+  align-items: center; /* Center them vertically */
+  justify-content: flex-start; /* Align to the start of the header */
+  padding: 1em; /* Add some space */
+}
+
+.back-button {
+  margin-right: 20px; /* Space between the back button and the logo */
+  text-decoration: none; /* Remove the underline from the link */
+  color: white; /* Set the text color */
+  font-size: 30px; /* Set the font size */
+  padding: 5px 10px; /* Padding inside the button */
+  border: none; /* No border */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Cursor to indicate it's clickable */
+}
+
+.left-logo img {
+  max-width: 550px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .left-logo img {
+    max-width: 50px; /* Smaller logo for smaller screens */
+  }
+
+  .back-button {
+    font-size: 14px; /* Smaller font size for the back button on smaller screens */
+  }
+}
+
+.menu-items {
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Maximum width for readability */
+  margin-left: auto; /* Push to the right */
+  margin-right: 250px; /* Space from the right edge */
+  padding-top: 20px; /* Space below the header */
+  color: white;
+}
+
+/* You can also add styles for <h2> and <p> within .menu-items if needed */
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .menu-items {
+    margin-right: 10px;
+    margin-left: 10px; /* Adjust margins for smaller screens */
+    max-width: 100%; /* Allow full width on small screens */
+  }
+  .menu-items {
+    color: white;
+  }
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.menu-item span:first-child {
+  flex-grow: 1;
+}
+
+/* Existing CSS below... */
+
+@media screen and (max-width: 600px) {
+  /* Responsive styles as needed */
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    margin-top: 5px; /* Add a little space between the title and price on small screens */
+  }
+}
+
+.menu-item span {
+  font-size: 2.2em; /* Adjust this value to increase the font size of the item names */
+}
+
+.menu-items p {
+  font-size: 1.2em; /* Adjust this value to increase the font size of the descriptions */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .menu-item span {
+    font-size: 1.5em; /* Adjust for smaller screens if needed */
+  }
+
+  .menu-items p {
+    font-size: 1em; /* Adjust for smaller screens if needed */
+  }
+}

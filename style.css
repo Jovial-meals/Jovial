@@ -1,8 +1,8 @@
-* {
-  background-color: #a8caab;
-}
-
 body {
+  background-image: url("images/background/backgroundOut.png"); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   display: flex; /* Use Flexbox in the body */
   flex-direction: column; /* Align children elements vertically */
   align-items: center; /* Center children elements horizontally */
@@ -192,20 +192,20 @@ button {
 }
 
 .menu-item span {
-    font-size: 2.2em; /* Adjust this value to increase the font size of the item names */
+  font-size: 2.2em; /* Adjust this value to increase the font size of the item names */
 }
 
 .menu-items p {
-    font-size: 1.2em; /* Adjust this value to increase the font size of the descriptions */
+  font-size: 1.2em; /* Adjust this value to increase the font size of the descriptions */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
-    .menu-item span {
-        font-size: 1.5em; /* Adjust for smaller screens if needed */
-    }
+  .menu-item span {
+    font-size: 1.5em; /* Adjust for smaller screens if needed */
+  }
 
-    .menu-items p {
-        font-size: 1em; /* Adjust for smaller screens if needed */
-    }
+  .menu-items p {
+    font-size: 1em; /* Adjust for smaller screens if needed */
+  }
 }
